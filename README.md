@@ -37,4 +37,4 @@ To change the energy effect, you can pass a different `projectId` prop to the `E
 ```
 
 ## License
-This project is licensed under the terms described in the [LICENCE](./LICENCE) file.
+This project is licensed under the terms described in the [LICENCE](LICENCE) file.
