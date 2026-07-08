@@ -49,7 +49,7 @@ export default function Home() {
           </h1>
           
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl font-light animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300 drop-shadow-md">
-            Hi, I'm Pranav Arun. I specialize in building scalable web applications, robust backends, and beautiful user interfaces that solve real-world problems.
+            Hi, I&apos;m Pranav Arun. I specialize in building scalable web applications, robust backends, and beautiful user interfaces that solve real-world problems.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-4 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-500">
@@ -121,7 +121,7 @@ export default function Home() {
         <section id="projects" className="py-24 px-6 max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">Featured Projects</h2>
-            <p className="text-white/60 text-lg">Some of the recent work I've done.</p>
+            <p className="text-white/60 text-lg">Some of the recent work I&apos;ve done.</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">

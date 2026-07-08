@@ -1,6 +1,6 @@
 module.exports = {
   hooks: {
-    readPackage(pkg, context) {
+    readPackage(pkg, _context) {
       if (pkg.dependencies && pkg.dependencies.postcss) {
         pkg.dependencies.postcss = '8.5.10';
       }
