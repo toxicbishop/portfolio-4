@@ -35,8 +35,8 @@ export default function Home() {
     }
   }, []);
 
-  // Helper to get motion props based onotion preference
-  const getMotionProps = <T>(defaults: T): Partial<MotionProps> => {
+  // Helper to get motion props based on reduced motion preference
+  const getMotionProps = <T,>(defaults: T): Partial<MotionProps> => {
     if (reducedMotion) {
       // If reduced motion, set initial and animate to the same final state
       return { initial: undefined, animate: undefined };
