@@ -110,25 +110,13 @@ export default function Home() {
             className="text-6xl md:text-8xl font-black tracking-tight mb-8 leading-[1.1] text-transparent bg-clip-text bg-linear-to-br from-white to-white/50 drop-shadow-lg"
           >
             Building Digital <br className="hidden md:block" /> Experiences
-          </motion.h1>
-
-          <motion.p
-            {...getMotionProps({ y: 20, opacity: 0 })}
-            initial={reducedMotion ? undefined : { y: 20, opacity: 0 }}
-            animate={reducedMotion ? undefined : { y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl font-light drop-shadow-md"
-          >
-            Hi, I'm Pranav Arun. I specialize in building scalable web applications, robust backends, and beautiful user interfaces that solve real-world problems.
-          </motion.p>
-
-          <motion.div
-            {...getMotionProps({ y: 30, opacity: 0 })}
-            initial={reducedMotion ? undefined : { y: 30, opacity: 0 }}
-            animate={reducedMotion ? undefined : { y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="flex flex-col sm:flex-row items-center gap-4"
-          >
+          </h1>
+          
+          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl font-light animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300 drop-shadow-md">
+            Hi, I&apos;m Pranav Arun. I specialize in building scalable web applications, robust backends, and beautiful user interfaces that solve real-world problems.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row items-center gap-4 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-500">
             <a href="#projects">
               <Button size="lg" className="h-12 px-8 rounded-full bg-white text-black hover:bg-white/90 text-base font-semibold group shadow-lg shadow-white/20">
                 View My Work
@@ -270,7 +258,7 @@ export default function Home() {
         <section id="projects" className="py-24 px-6 max-w-7xl mx-auto w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-md">Featured Projects</h2>
-            <p className="text-white/60 text-lg">Some of the recent work I've done.</p>
+            <p className="text-white/60 text-lg">Some of the recent work I&apos;ve done.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
