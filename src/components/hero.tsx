@@ -1,39 +1,40 @@
 "use client"
 
 import { motion, useReducedMotion } from "motion/react"
-import { ArrowRight, Code, Sparkle } from "@phosphor-icons/react"
-import { Button } from "@/components/ui/button"
+import { ArrowUpRight, GithubLogo } from "@phosphor-icons/react"
 import { fadeUp, scaleIn, staggerContainer, heroWord } from "@/animations/variants"
 
 export function Hero() {
   const reducedMotion = useReducedMotion()
-  const heroWords = ["Building", "Digital", "Experiences"]
+  const heroWords = ["Crafting", "Digital", "Realities"]
 
   return (
     <section
-      id="about"
-      className="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 py-20 lg:py-48 gap-12"
+      id="home"
+      className="relative mx-auto flex min-h-[100dvh] w-full max-w-7xl flex-col justify-center px-6 pt-24 pb-12"
     >
-      <div className="flex w-full flex-col items-start text-left max-w-2xl">
+      <div className="flex w-full flex-col items-start text-left max-w-3xl z-10 relative">
         <motion.div
-          className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-3 py-1 text-sm font-medium shadow-[0_0_40px_rgba(34,211,238,0.12)] backdrop-blur-md text-foreground"
+          className="mb-8 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 p-1 pr-4 text-xs font-medium uppercase tracking-[0.2em] text-zinc-300 backdrop-blur-md"
           initial={reducedMotion ? false : "hidden"}
           animate="visible"
           variants={scaleIn}
         >
-          <Sparkle weight="fill" className="size-4 text-cyan-500 dark:text-cyan-300" />
-          <span>Student</span>
+          <div className="flex size-6 items-center justify-center rounded-full bg-cyan-500/20 text-cyan-400">
+            <div className="size-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)] animate-pulse" />
+          </div>
+          <span>Available for work</span>
         </motion.div>
 
         <motion.h1
-          className="mb-6 text-5xl font-black leading-[1.1] tracking-normal text-foreground md:text-7xl lg:text-8xl"
+          className="mb-8 text-5xl font-black leading-[1.05] tracking-tight text-white md:text-7xl lg:text-[5.5rem]"
           initial={reducedMotion ? false : "hidden"}
           animate="visible"
           variants={staggerContainer}
         >
-          {heroWords.map((word, index) => (
+          {heroWords.map((word) => (
             <motion.span
-              className="inline-block pr-3"
+              className="inline-block pr-4"
               key={word}
               variants={heroWord}
               style={{ transformOrigin: "0% 100%" }}
@@ -44,13 +45,13 @@ export function Hero() {
         </motion.h1>
 
         <motion.p
-          className="mb-10 text-lg font-light text-muted-foreground md:text-xl max-w-lg"
+          className="mb-12 text-lg font-normal leading-relaxed text-zinc-400 md:text-xl max-w-xl"
           initial={reducedMotion ? false : "hidden"}
           animate="visible"
           variants={fadeUp}
           transition={{ delay: 0.28 }}
         >
-          Hi, I&apos;m Pranav Arun. I specialize in building scalable web applications, robust backends, and beautiful user interfaces that solve real-world problems.
+          I am Pranav Arun. A software engineer focused on building highly tactile, scalable systems and Awwwards-tier user interfaces that push the boundaries of the web.
         </motion.p>
 
         <motion.div
@@ -59,32 +60,40 @@ export function Hero() {
           animate="visible"
           variants={staggerContainer}
         >
-          <motion.a href="#projects" variants={fadeUp}>
-            <Button
-              size="lg"
-              className="h-12 rounded-full px-8 text-base font-semibold shadow-lg transition-transform hover:scale-105 active:scale-95"
-            >
-              View My Work
-              <ArrowRight weight="bold" className="ml-2 size-4" />
-            </Button>
+          {/* Nested CTA Architecture */}
+          <motion.a 
+            href="#projects" 
+            className="group flex items-center gap-4 rounded-full bg-white pl-6 pr-2 py-2 transition-transform hover:scale-[0.98] active:scale-[0.95]"
+            variants={fadeUp}
+          >
+            <span className="text-sm font-semibold text-black uppercase tracking-wide">
+              Selected Work
+            </span>
+            <div className="flex size-10 items-center justify-center rounded-full bg-black text-white transition-transform group-hover:scale-105 group-hover:translate-x-1 group-hover:-translate-y-[1px]">
+              <ArrowUpRight weight="bold" className="size-4" />
+            </div>
           </motion.a>
+
           <motion.a
             href="https://github.com/toxicbishop"
             target="_blank"
             rel="noreferrer"
+            className="group flex items-center gap-4 rounded-full border border-white/10 bg-white/5 pl-6 pr-2 py-2 backdrop-blur-md transition-transform hover:bg-white/10 hover:scale-[0.98] active:scale-[0.95]"
             variants={fadeUp}
           >
-            <Button
-              size="lg"
-              variant="outline"
-              className="h-12 rounded-full px-8 text-base shadow-lg transition-transform hover:scale-105 active:scale-95 bg-background/50 backdrop-blur-md"
-            >
-              <Code weight="bold" className="mr-2 size-4" />
+            <span className="text-sm font-medium text-white uppercase tracking-wide">
               GitHub
-            </Button>
+            </span>
+            <div className="flex size-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-300 transition-transform group-hover:scale-105 group-hover:text-white group-hover:bg-white/20">
+              <GithubLogo weight="fill" className="size-4" />
+            </div>
           </motion.a>
         </motion.div>
       </div>
+      
+      {/* Heavy Mesh Gradient Glows for Ethereal Glass */}
+      <div className="pointer-events-none absolute right-0 top-1/4 h-[500px] w-[500px] -translate-y-1/2 translate-x-1/3 rounded-full bg-cyan-500/20 blur-[120px]" />
+      <div className="pointer-events-none absolute left-0 bottom-0 h-[400px] w-[400px] translate-y-1/4 -translate-x-1/3 rounded-full bg-emerald-500/10 blur-[100px]" />
     </section>
   )
 }

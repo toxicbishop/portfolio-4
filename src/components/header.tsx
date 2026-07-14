@@ -1,8 +1,7 @@
 "use client"
 
 import { motion, useReducedMotion } from "motion/react"
-import { Lightning, GithubLogo, LinkedinLogo } from "@phosphor-icons/react"
-
+import { Lightning, GithubLogo, LinkedinLogo, DiscordLogo, GitlabLogo, InstagramLogo, XLogo } from "@phosphor-icons/react"
 import { fadeDown } from "@/animations/variants"
 
 export function Header() {
@@ -10,60 +9,102 @@ export function Header() {
 
   return (
     <motion.header
-      className="sticky top-0 z-50 mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-5 backdrop-blur-sm"
+      className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center justify-between gap-8 px-6 py-3 rounded-full border border-white/10 bg-black/40 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
       initial={reducedMotion ? false : "hidden"}
       animate="visible"
       variants={fadeDown}
     >
-      <a href="#about" className="flex items-center gap-2 text-foreground">
+      <a href="#home" className="flex items-center gap-2 text-foreground group">
         <motion.span
+          className="bg-black/40 p-1.5 rounded-full border border-white/10"
           animate={reducedMotion ? undefined : { rotate: [0, -7, 7, 0] }}
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
-          <Lightning weight="fill" className="size-8 text-cyan-500 dark:text-cyan-300" />
+          <Lightning weight="fill" className="size-4 text-cyan-400 group-hover:text-cyan-300 transition-colors" />
         </motion.span>
-        <span className="text-xl font-bold uppercase tracking-wider drop-shadow-sm">
-          Pranav Arun
+        <span className="text-sm font-bold uppercase tracking-widest text-white">
+          PA.
         </span>
       </a>
-      <nav className="hidden items-center gap-8 text-sm font-medium text-muted-foreground md:flex">
-        {["About", "Skills", "Projects"].map((item) => (
+      <nav className="hidden items-center gap-6 text-[13px] font-medium text-zinc-400 uppercase tracking-widest md:flex">
+        {["About", "Skills", "Experience", "Projects"].map((item) => (
           <motion.a
             key={item}
             href={`#${item.toLowerCase()}`}
-            className="hover:text-foreground transition-colors"
-            whileHover={reducedMotion ? undefined : { y: -2 }}
+            className="hover:text-white transition-colors"
+            whileHover={reducedMotion ? undefined : { y: -1 }}
             whileTap={reducedMotion ? undefined : { y: 0 }}
           >
             {item}
           </motion.a>
         ))}
-        <div className="flex gap-4 items-center">
-          {/* We'll replace the image socials with Phosphor icons since they're cleaner */}
-          <motion.a
-            href="https://github.com/toxicbishop"
-            target="_blank"
-            rel="noreferrer"
-            className="opacity-70 transition-opacity hover:opacity-100 hover:text-foreground"
-            whileHover={reducedMotion ? undefined : { y: -3, scale: 1.12 }}
-            whileTap={reducedMotion ? undefined : { scale: 0.94 }}
-          >
-            <GithubLogo weight="fill" className="size-6" />
-          </motion.a>
-          
-          <motion.a
-            href="https://www.linkedin.com/in/pranav-arun/"
-            target="_blank"
-            rel="noreferrer"
-            className="opacity-70 transition-opacity hover:opacity-100 hover:text-foreground"
-            whileHover={reducedMotion ? undefined : { y: -3, scale: 1.12 }}
-            whileTap={reducedMotion ? undefined : { scale: 0.94 }}
-          >
-            <LinkedinLogo weight="fill" className="size-6" />
-          </motion.a>
-
-        </div>
       </nav>
+      <div className="flex items-center gap-2">
+        <motion.a
+          href="https://github.com/toxicbishop"
+          target="_blank"
+          rel="noreferrer"
+          className="flex size-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 transition-all hover:bg-white/10 hover:text-white"
+          whileHover={reducedMotion ? undefined : { scale: 1.05 }}
+          whileTap={reducedMotion ? undefined : { scale: 0.95 }}
+        >
+          <GithubLogo weight="fill" className="size-4" />
+        </motion.a>
+        
+        <motion.a
+          href="https://www.linkedin.com/in/pranav-arun/"
+          target="_blank"
+          rel="noreferrer"
+          className="flex size-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 transition-all hover:bg-white/10 hover:text-white"
+          whileHover={reducedMotion ? undefined : { scale: 1.05 }}
+          whileTap={reducedMotion ? undefined : { scale: 0.95 }}
+        >
+          <LinkedinLogo weight="fill" className="size-4" />
+        </motion.a>
+
+        <motion.a
+          href="https://discord.com/users/701732138269016064"
+          target="_blank"
+          rel="noreferrer"
+          className="flex size-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 transition-all hover:bg-white/10 hover:text-white"
+          whileHover={reducedMotion ? undefined : { scale: 1.05 }}
+          whileTap={reducedMotion ? undefined : { scale: 0.95 }}
+        >
+          <DiscordLogo weight="fill" className="size-4" />
+        </motion.a>
+        <motion.a
+          href="https://gitlab.com/toxicbishop"
+          target="_blank"
+          rel="noreferrer"
+          className="flex size-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 transition-all hover:bg-white/10 hover:text-white"
+          whileHover={reducedMotion ? undefined : { scale: 1.05 }}
+          whileTap={reducedMotion ? undefined : { scale: 0.95 }}
+        >
+          <GitlabLogo weight="fill" className="size-4" />
+        </motion.a>
+
+        <motion.a
+          href="https://www.instagram.com/toxicbishop_"
+          target="_blank"
+          rel="noreferrer"
+          className="flex size-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 transition-all hover:bg-white/10 hover:text-white"
+          whileHover={reducedMotion ? undefined : { scale: 1.05 }}
+          whileTap={reducedMotion ? undefined : { scale: 0.95 }}
+        >
+          <InstagramLogo weight="fill" className="size-4" />
+        </motion.a>
+
+        <motion.a
+          href="https://x.com/Pranav63076884"
+          target="_blank"
+          rel="noreferrer"
+          className="flex size-8 items-center justify-center rounded-full bg-white/5 border border-white/10 text-zinc-400 transition-all hover:bg-white/10 hover:text-white"
+          whileHover={reducedMotion ? undefined : { scale: 1.05 }}
+          whileTap={reducedMotion ? undefined : { scale: 0.95 }}
+        >
+          <XLogo weight="fill" className="size-4" />
+        </motion.a>
+      </div>
     </motion.header>
   )
 }

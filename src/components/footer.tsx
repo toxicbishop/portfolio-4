@@ -1,8 +1,7 @@
 "use client"
 
 import { motion, useReducedMotion } from "motion/react"
-import { Lightning, GithubLogo, LinkedinLogo } from "@phosphor-icons/react"
-import { Socials } from "@/constants"
+import { Lightning, GithubLogo, LinkedinLogo, DiscordLogo, GitlabLogo, InstagramLogo, XLogo } from "@phosphor-icons/react"
 
 export function Footer() {
   const reducedMotion = useReducedMotion()
@@ -38,6 +37,49 @@ export function Footer() {
           >
             <LinkedinLogo weight="fill" className="size-5 opacity-70" />
             LinkedIn
+          </motion.a>
+          <motion.a
+            href="https://discord.com/users/701732138269016064"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 transition-colors hover:text-foreground"
+            whileHover={reducedMotion ? undefined : { y: -2 }}
+          >
+            <DiscordLogo weight="fill" className="size-5 opacity-70" />
+            Discord
+          </motion.a>
+
+          <motion.a
+            href="https://gitlab.com/toxicbishop"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 transition-colors hover:text-foreground"
+            whileHover={reducedMotion ? undefined : { y: -2 }}
+          >
+            <GitlabLogo weight="fill" className="size-5 opacity-70" />
+            GitLab
+          </motion.a>
+
+          <motion.a
+            href="https://www.instagram.com/toxicbishop_"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 transition-colors hover:text-foreground"
+            whileHover={reducedMotion ? undefined : { y: -2 }}
+          >
+            <InstagramLogo weight="fill" className="size-5 opacity-70" />
+            Instagram
+          </motion.a>
+
+          <motion.a
+            href="https://x.com/Pranav63076884"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 transition-colors hover:text-foreground"
+            whileHover={reducedMotion ? undefined : { y: -2 }}
+          >
+            <XLogo weight="fill" className="size-5 opacity-70" />
+            X
           </motion.a>
         </div>
       </div>
