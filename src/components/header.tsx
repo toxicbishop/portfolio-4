@@ -1,20 +1,12 @@
 "use client"
 
 import { motion, useReducedMotion } from "motion/react"
-import { Lightning, Moon, Sun, GithubLogo, LinkedinLogo, TwitterLogo } from "@phosphor-icons/react"
-import { useTheme } from "next-themes"
-import { useEffect, useState } from "react"
+import { Lightning, GithubLogo, LinkedinLogo } from "@phosphor-icons/react"
+
 import { fadeDown } from "@/animations/variants"
-import { Socials } from "@/constants"
 
 export function Header() {
   const reducedMotion = useReducedMotion()
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
 
   return (
     <motion.header
@@ -70,19 +62,6 @@ export function Header() {
             <LinkedinLogo weight="fill" className="size-6" />
           </motion.a>
 
-          {mounted && (
-            <button
-              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="ml-2 rounded-full p-2 hover:bg-muted transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring text-muted-foreground hover:text-foreground"
-              aria-label="Toggle theme"
-            >
-              {theme === "dark" ? (
-                <Sun weight="bold" className="size-5" />
-              ) : (
-                <Moon weight="bold" className="size-5" />
-              )}
-            </button>
-          )}
         </div>
       </nav>
     </motion.header>
