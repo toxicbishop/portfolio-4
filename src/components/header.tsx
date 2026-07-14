@@ -60,7 +60,7 @@ export function Header() {
           </motion.a>
           
           <motion.a
-            href="#"
+            href="https://www.linkedin.com/in/pranav-arun/"
             target="_blank"
             rel="noreferrer"
             className="opacity-70 transition-opacity hover:opacity-100 hover:text-foreground"

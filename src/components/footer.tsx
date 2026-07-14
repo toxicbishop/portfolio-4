@@ -30,7 +30,7 @@ export function Footer() {
           </motion.a>
           
           <motion.a
-            href="#"
+            href="https://www.linkedin.com/in/pranav-arun/"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2 transition-colors hover:text-foreground"
