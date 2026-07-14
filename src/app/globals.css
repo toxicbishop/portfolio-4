@@ -87,9 +87,9 @@
 
 /* Dark Mode (Zinc based) */
 .dark {
-  --background: #09090b; /* Fixed: no pure black #000000 */
+  --background: #050505;
   --foreground: #fafafa;
-  --card: #09090b;
+  --card: #050505;
   --card-foreground: #fafafa;
   --popover: #09090b;
   --popover-foreground: #fafafa;
