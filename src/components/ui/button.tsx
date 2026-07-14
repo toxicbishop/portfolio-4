@@ -2,7 +2,7 @@
 
 import { Button as ButtonPrimitive } from "@base-ui/react/button"
 import { cva, type VariantProps } from "class-variance-authority"
-import { motion, type MotionProps, useReducedMotion } from "framer-motion"
+import { motion, type MotionProps, useReducedMotion } from "motion/react"
 import type { ComponentPropsWithoutRef } from "react"
 
 import { buttonMotion } from "@/animations/variants"

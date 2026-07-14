@@ -1,53 +1,4 @@
-export const Skill_data = [
-    {
-        skill_name: "HTML 5",
-        Image: "/lang&frameworks/html.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "CSS",
-        Image: "/lang&frameworks/css.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "JavaScript",
-        Image: "/lang&frameworks/js.png",
-        width: 65,
-        height: 65,
-    },
-    {
-        skill_name: "TypeScript",
-        Image: "/lang&frameworks/ts.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "React",
-        Image: "/lang&frameworks/react.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "Next.js 13",
-        Image: "/lang&frameworks/next.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "Tailwind CSS",
-        Image: "/lang&frameworks/tailwind.png",
-        width: 80,
-        height: 80,
-    },
-    {
-        skill_name: "MongoDB",
-        Image: "/lang&frameworks/MongoDB.svg",
-        width: 80,
-        height: 80,
-    },
-];
+
 
 export const Socials = [
     {
@@ -208,44 +159,7 @@ export const DevTools = [
     },
 ];
 
-export const libraries = [
-    {
-        skill_name: "React",
-        Image: "/lang&frameworks/react.png",
-        width: 50,
-        height: 50,
-    },
-    {
-        skill_name: "Tailwind CSS",
-        Image: "/lang&frameworks/tailwind.png",
-        width: 50,
-        height: 50,
-    },
-    {
-        skill_name: "Flask",
-        Image: "/lang&frameworks/flask.jpeg",
-        width: 50,
-        height: 50,
-    },
-    {
-        skill_name: "SQLAlchemy",
-        Image: "/lang&frameworks/SQLAlchemy.svg",
-        width: 50,
-        height: 50,
-    },
-    {
-        skill_name: "Three.js",
-        Image: "/lang&frameworks/Three.js.svg",
-        width: 60,
-        height: 60,
-    },
-    {
-        skill_name: "Jupyter",
-        Image: "/lang&frameworks/jupyter.svg",
-        width: 50,
-        height: 50,
-    },
-];
+
 
 export const ProjectsData = [
     {

@@ -1,5 +1,4 @@
-import type { Variants } from "framer-motion"
-
+import type { Variants } from "motion/react"
 export const viewportOnce = {
   once: true,
   amount: 0.24,
