@@ -187,9 +187,9 @@ export const ProjectsData = [
         tags: ["Python", "Cryptography", "Blockchain"]
     },
     {
-        title: "Bengaluru Cost Explorer",
+        title: "Cost of Living in Bengaluru",
         description: "An interactive explorer for analyzing and visualizing the cost of living and real estate trends in Bengaluru.",
-        image: "/projects/costoflivingbengaluru.png",
+        image: "/projects/costoflivingbenagluru.png",
         github: "https://github.com/Mohammed0572/bengaluru-cost-explorer",
         website: "https://costinbengaluru.netlify.app",
         tags: ["React", "Python", "Data Analysis", "Tailwind"]
