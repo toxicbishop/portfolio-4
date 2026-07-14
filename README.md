@@ -5,11 +5,13 @@ A cinematic, high-performance portfolio built with Next.js, React, and Tailwind 
 ---
 
 ## Showcase
+|                  Landing Page                  |             About              |
+| :--------------------------------------------: | :---------------------------------------: |
+| ![Landing Page](public/assets/Landing-Page.png) | ![About](public/assets/about.png) |
 
-| Landing Page | About Section | Experience Section | Tech Stack | Projects Section |
-| :---: | :---: | :---: | :---: | :---: |
-| <img src="public/assets/Landing-page.png" width="1200" alt="Landing Page"> | <img src="public/assets/about.png" width="1200" alt="About Section"> | <img src="public/assets/experience.png" width="1200" alt="Experience Section"> | <img src="public/assets/teach-stack.png" width="1200" alt="Tech Stack"> | <img src="public/assets/projects.png" width="1200" alt="Projects Section"> |
-
+|                Experience                |             Tech Stack             |
+| :------------------------------------------: | :---------------------------------------: |
+| ![Experience](public/assets/experience.png) | ![Tech Stack](public/assets/tech-stack.png) |
 ---
 
 ## Features
